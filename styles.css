@@ -371,7 +371,7 @@ h3 {
 
     .wpp {
         width: 138%;
-        height: 95vh;
+        height: 145vh;
     }
 
     .cont-foto {
@@ -405,7 +405,7 @@ h3 {
     .awards {
         width: 100%;
         flex-direction: column;
-        margin-top: 750px
+        margin-top: 1050px
     }
 
     .awd-frame {

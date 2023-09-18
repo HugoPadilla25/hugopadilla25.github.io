@@ -33,7 +33,7 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.514);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -42,6 +42,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .wpp {
@@ -61,8 +63,7 @@ body {
 }
 
 .cont-foto {
-    height: 50%;
-    width: 65%;
+    min-height: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,9 +86,9 @@ body {
 }
 
 .marco-foto {
-    height: 300px;
-    width: 300px;
-    border-radius: 150px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
     background-color: black;
     filter: blur(100%);
     margin-left: 60px;
@@ -136,12 +137,13 @@ h3 {
 }
 
 #boton1 {
-    width: 25%;
-    height: 7%;
+    width: 35%;
     border: none;
     background-color: rgb(67, 67, 143);
     border-radius: 5px;
     margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #boton1>a {
@@ -174,6 +176,7 @@ h3 {
     align-items: center;
     margin-left: 10%;
     text-align: justify;
+    margin-top: 50px;
 }
 
 .awd-frame {
@@ -249,7 +252,7 @@ h3 {
 
 .experience {
     width: 80%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -260,7 +263,7 @@ h3 {
 }
 
 .wk-sub {
-    height: 85vh;
+    min-height: 85vh;
     width: 48%;
 }
 
@@ -285,9 +288,12 @@ h3 {
 
 .contact {
     width: 80%;
-    height: 50vh;
+    height: 100vh;
+    background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 10%;
     text-align: justify;
 
@@ -301,7 +307,6 @@ h3 {
 .icons-cont {
     height: 30%;
     width: 80%;
-    margin-top: 1%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -354,5 +359,84 @@ h3 {
     color: red;
     transition: 0.3s;
     cursor: pointer;
+}
+
+/*Responsive max 600px */
+
+@media (max-width: 850px) {
+
+    body {
+        justify-content: center;
+    }
+
+    .wpp {
+        width: 138%;
+        height: 95vh;
+    }
+
+    .cont-foto {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-right: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+    .marco-foto {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        background-color: rgb(0, 0, 29);
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    .about {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-box {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .awards {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 750px
+    }
+
+    .awd-frame {
+        margin-top: -50px;
+    }
+
+    .awd-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subcontainer {
+        width: 100%;
+    }
+
+    .experience {
+        width: 100%;
+        height: 1500px;
+        flex-direction: column;
+    }
+
+    .wk-sub {
+        width: 100%;
+    }
+
+    .contact {
+        width: 120%;
+    }
+    .icons-cont {
+        width: 100%;
+        margin: 0;
+    }
+
 }
 
